@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+     box-sizing: border-box;
+      font-family: Arial, sans-serif;
+}
+
+.course {
+      height:40vh;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      background-color: #021644;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+     
+     
+     justify-content:space-between;
+     padding:3%;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 25px;
+      margin-left: 5%;
+      margin-bottom: 30px;
+      color: white;
+    }
+.card {
+
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+
+      border-radius: 25px;
+      padding: 25px;
+
+      transition: 0.3s;
+    }
+  .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .card h2 {
+      margin-bottom: 20px;
+    }
+
+    /* Progress Bar */
+
+    .progress-box {
+      width: 100%;
+      height: 10px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .progress {
+      height: 100%;
+      background: linear-gradient(to right, cyan, blue);
+      border-radius: 20px;
+    }
+
+    .percent {
+      margin-top: 10px;
+      color: #aaa;
+    }
+    
+    /* Mobile Responsive */
+
+@media (max-width: 720px) {
+    .course {
+      height:60vh;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      background-color: #021644;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+     
+     
+     justify-content:space-between;
+     padding:2%;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 25px;
+
+      margin-bottom: 30px;
+      color: white;
+    }
+  /* Main Layout */
+
+ 
+
+  /* Sidebar */
+
+  
+  /* Course Cards */
+
+  
+
+  /* Bottom Section */
+
+  
+
+  /* Learning Stats */
+
+  
+}

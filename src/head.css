@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+     box-sizing: border-box;
+      font-family: Arial, sans-serif;
+}
+.nav{
+    height: 35vh;
+    padding:2%;
+    background-color: #021644;
+    color:white;
+     border-bottom: 1px solid rgba(255,255,255,0.1);
+     
+     align-items:center;
+     justify-content:space-between;
+     padding:3%;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 25px;
+      overflow-y: scroll;
+      scrollbar-width: none;
+      margin-bottom: 30px;
+      margin-left: 5%;
+}
+.nav p{
+    font-size: 30px;
+    font-weight: bold;
+}
+.nav h1 {
+      font-size: 45px;
+      margin-top: 10px;
+    }
+.nav button {
+      font-size: 16px;
+      margin-top: 25px;
+      padding: 14px 24px;
+      border: none;
+      border-radius: 12px;
+      background: cyan;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+@media(min-width:720px)and (max-width: 1024px) {
+    .nav{
+    height: 35vh;
+    background-color: #021644;
+    color:white;
+     border-bottom: 1px solid rgba(255,255,255,0.1);
+     
+     align-items:center;
+     justify-content:space-between;
+     padding:8%;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 25px;
+
+      margin-bottom: 30px;
+}
+.nav p{
+    margin-bottom: 2%;
+    font-size: 34px;
+    font-weight: bold;
+}
+.nav button {
+      font-size: 16px;
+      margin-top: 5%;
+      padding: 14px 24px;
+      border: none;
+      border-radius: 12px;
+      background: cyan;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+}
+@media (max-width: 720px) {
+    .nav{
+    height: 35vh;
+    background-color: #021644;
+    color:white;
+     border-bottom: 1px solid rgba(255,255,255,0.1);
+     
+     align-items:center;
+     justify-content:space-between;
+     padding:10%;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 25px;
+
+      margin-bottom: 30px;
+      overflow-y: scroll;
+}
+    .nav p{
+    margin-bottom: 2%;
+    font-size: 22px;
+    font-weight: bold;
+} 
+.nav h1 {
+      font-size: 30px;
+      margin-top: 10px;
+    }
+}
