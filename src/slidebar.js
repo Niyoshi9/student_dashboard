@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Slidebar() {
+export default function Slidebar({ onLogout }) {
    const [open, setOpen] = useState(false);
   return (
     <>
@@ -29,13 +29,15 @@ export default function Slidebar() {
 
           color:"white",
 
-          
+          display:"flex",
+
+          flexDirection:"column",
 
           transition:"0.3s",
 
           zIndex:"999"
         }}>
-     <div className="sb">
+     <div className="sb" style={{ display:"flex", flexDirection:"column", height:"100%" }}>
       <div className="logo">
         <h1> UDEMY</h1>
       </div>
@@ -57,6 +59,25 @@ export default function Slidebar() {
           
         </div>
 
+        <div style={{ flex: 1 }} />
+
+        <button
+          className="signout-btn"
+          onClick={onLogout}
+          style={{
+            margin: "16px",
+            padding: "12px",
+            background: "rgba(255,255,255,0.08)",
+            border: "1px solid rgba(255,255,255,0.15)",
+            borderRadius: "10px",
+            color: "white",
+            cursor: "pointer",
+            fontSize: "14px",
+          }}
+        >
+          Sign out
+        </button>
+
     </div>
 
     </aside>
@@ -64,4 +85,3 @@ export default function Slidebar() {
     </>
   );
 }
-
