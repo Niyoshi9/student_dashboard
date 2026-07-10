@@ -23,6 +23,7 @@ const [title, setTitle] = useState("");
   useEffect(() => {
 
     fetchCourses();
+     // eslint-disable-next-line react-hooks/exhaustive-deps
 
   }, []);
 
