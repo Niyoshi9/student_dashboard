@@ -5,10 +5,9 @@ export default function Tasks({user}) {
     const [task_name, setTitle]=useState("");
     const [tasksData, setTasksData] = useState([]);
 
-    useEffect(() => {
-        fetchTasks();
-       // eslint-disable-next-line react-hooks/exhaustive-deps
-    } , []);
+   useEffect(() => {
+  fetchTasks();
+}, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     async function fetchTasks() {
         const { data, error } = await supabase

@@ -20,12 +20,9 @@ const [title, setTitle] = useState("");
 
  const [courses, setCourses] = useState([]);
 
-  useEffect(() => {
-
-    fetchCourses();
-     // eslint-disable-next-line react-hooks/exhaustive-deps
-
-  }, []);
+ useEffect(() => {
+  fetchCourses();
+}, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   async function fetchCourses() {
 
