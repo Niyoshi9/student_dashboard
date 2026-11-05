@@ -57,8 +57,7 @@ const addCourse = async () => {
 };
   return (
 <>
-    
-
+ 
 <div className="course">
 
         <div style={{ display: 'flex', gap: 10, marginBottom: 20, gridColumn: '1 / -1' }}>

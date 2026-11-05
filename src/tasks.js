@@ -73,8 +73,6 @@ export default function Tasks({user}) {
       });
      
 
-      
-
       if(!error)
       {
         fetchTasks();
@@ -86,22 +84,20 @@ export default function Tasks({user}) {
         console.log(error);
         
       }
-    };
-      const toggleTask = async (task) => {
-         
-
-    const { error } = await supabase
-      .from("tasks")
-      .update({ completed: !task.completed })
-      .eq("id", task.id);
-        
-    if (!error) {
-      fetchTasks();
-      if (task.course_id) updateCourseProgress(task.course_id);
-    } else {
-      console.log(error);
-    }
   };
+    const toggleTask = async (task) => {
+      const { error } = await supabase
+        .from("tasks")
+        .update({ completed: !task.completed })
+        .eq("id", task.id);
+          
+      if (!error) {
+        fetchTasks();
+        if (task.course_id) updateCourseProgress(task.course_id);
+      } else {
+        console.log(error);
+      }
+    };
 
   const deleteTask = async (task) => {
     const { error } = await supabase
@@ -134,6 +130,7 @@ export default function Tasks({user}) {
             onKeyDown={(e) => e.key === "Enter" && addTask()}
           />
           <select
+            aria-label="Course for this task"
             value={selectedCourse}
             onChange={(e) => setSelectedCourse(e.target.value)}
           >

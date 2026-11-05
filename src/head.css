@@ -55,13 +55,13 @@
       border-radius: 25px;
 
       margin-bottom: 30px;
-}
-.nav p{
+    }
+    .nav p{
     margin-bottom: 2%;
     font-size: 34px;
     font-weight: bold;
-}
-.nav button {
+   }
+    .nav button {
       font-size: 16px;
       margin-top: 5%;
       padding: 14px 24px;
@@ -89,13 +89,13 @@
 
       margin-bottom: 30px;
       overflow-y: scroll;
-}
+    }
     .nav p{
     margin-bottom: 2%;
     font-size: 22px;
     font-weight: bold;
-} 
-.nav h1 {
+    } 
+    .nav h1 {
       font-size: 30px;
       margin-top: 10px;
     }

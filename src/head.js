@@ -3,7 +3,8 @@ import React from "react";
 export default function Head() {
   return (
     <>
-    <div className="nav">
+    <main>
+      <div className="nav">
       <p>WELCOME BACK, LUCY!</p>
         <h1>
           Continue your learning journey today.
@@ -13,6 +14,8 @@ export default function Head() {
           Resume Learning
         </button>
     </div>
+    </main>
+   
    </>
   );
 }
